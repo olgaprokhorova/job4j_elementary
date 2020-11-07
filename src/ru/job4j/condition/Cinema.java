@@ -7,14 +7,15 @@ public class Cinema {
         } else {
             System.out.println("I can't.");
         }
+    }
 
-//    public static void access(int age) {
-//        System.out.println("The age of the customer is : " + age);
-//        if (age >= 18) {
-//            System.out.println("Welcome to the cinema.");
-//        } else {
-//            System.out.println("It is not for you.");
-//        }
+    public static void access(int age) {
+        System.out.println("The age of the customer is : " + age);
+        if (age >= 18) {
+             System.out.println("Welcome to the cinema.");
+        } else {
+            System.out.println("It is not for you.");
+        }
     }
 
     public static void main(String[] args) {
@@ -22,9 +23,7 @@ public class Cinema {
         permission(true, false);
         permission(false, true);
         permission(false, false);
-
-//        Cinema.access(21);
-//        Cinema.access(16);
-
+        Cinema.access(21);
+        Cinema.access(16);
     }
 }
