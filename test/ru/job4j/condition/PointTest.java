@@ -10,33 +10,27 @@ public class PointTest {
     @Test
     public void when1Minus3To65Then9() {
         double expected = 9.43;
-        int x1 = 1;
-        int y1 = -3;
-        int x2 = 6;
-        int y2 = 5;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(1, -3);
+        Point b = new Point(6, 5);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when28To03Then5() {
         double expected = 5.385;
-        int x1 = 2;
-        int y1 = 8;
-        int x2 = 0;
-        int y2 = 3;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(2, 8);
+        Point b = new Point(0, 3);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when05ToMinus55Then5() {
         double expected = 5;
-        int x1 = 0;
-        int y1 = 5;
-        int x2 = -5;
-        int y2 = 5;
-        double out = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 5);
+        Point b = new Point(-5, 5);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
