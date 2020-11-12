@@ -23,4 +23,16 @@ public class MaxTest {
         int result = Max.max(10, 10);
         assertThat(result, is(10));
     }
+
+    @Test
+    public void maxFor3Numbers() {
+        int result = Max.max(3, 5, 10);
+        assertThat(result, is(10));
+    }
+
+    @Test
+    public void maxFor4Numbers() {
+        int result = Max.max(-2, 8, 4, 3);
+        assertThat(result, is(8));
+    }
 }
